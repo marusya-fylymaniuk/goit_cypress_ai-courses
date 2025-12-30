@@ -1,0 +1,86 @@
+name: Run Cypress Tests
+
+on:
+  schedule:
+    - cron: "0 */4 * * *"
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  cypress-run:
+    runs-on: ubuntu-latest
+
+    steps:
+      # Step 1: Check out the repository
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      # Step to get the public IP address
+      - name: Get Public IP Address
+        run: curl https://api.ipify.org
+
+      # Step 2: Install Node.js
+      - name: Install Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: 20
+
+      # Step 3: Cache Node.js modules and Cypress binary
+      - name: Cache Node.js modules and Cypress binary
+        uses: actions/cache@v3
+        id: cache
+        with:
+          path: |
+            node_modules
+            ~/.cache/Cypress
+          key: cache-${{ runner.os }}-${{ hashFiles('package-lock.json') }}
+          restore-keys: |
+            cache-${{ runner.os }}-
+
+      # Step 4: Install dependencies
+      - name: Install dependencies
+        run: npm install
+
+      # Step 5: Install Cypress binary (if not cached)
+      - name: Install Cypress binary
+        run: npx cypress install
+        if: steps.cache.outputs.cache-hit != 'true'
+
+      # Step 6: Run Cypress tests
+      - name: Run Cypress tests
+        run: npm run cypress:run
+
+      # Step 7: Upload test results
+      - name: Upload test results
+        uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: cypress-results
+          path: |
+            cypress/screenshots
+            cypress/videos
+
+      # Step 8: Notify Slack with colored message
+      - name: Notify Slack
+        uses: slackapi/slack-github-action@v1
+        if: always()
+        with:
+          payload: |
+            {
+              "text": "Cypress Test Result Marusya: ${{ job.status == 'success' && ':white_check_mark:' || ':x: <@U07LBAB1DDK> <@U09EH6FKZ8Q>' }}",
+               "blocks": [
+                {
+                  "type": "section",
+                  "text": {
+                    "type": "mrkdwn",
+                    "text": "new PR! :pull_request: \n <${{ github.event.pull_request.html_url }}|${{ toJSON(github.event.pull_request.title) }}>"
+                  }
+                }
+              ]
+            }
+        env:
+          SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}

@@ -1,0 +1,204 @@
+[
+  {
+    "key": "ai-marketing-specialist",
+    "name": "AI Automator",
+    "url": "https://goit.global/ua/courses/ai-marketing-specialist/",
+    "locale": "ua",
+    "expected": {
+      "h1": "AI Automator",
+      "discountSectionSelector": "section.discount.section",
+      "anchors": ["#benefits", "#about", "#program", "#format", "#reviews"],
+      "submitButtonText": "Відправити"
+    },
+    "zoho": {
+      "productName": "AI_Marketing_Automation_Global_From_Landing_Page",
+      "productId": "1819773001945816767",
+      "formName": "page-modal-form",
+      "eventValue": "CourseLead"
+    },
+    "zohoFooter": {
+      "productName": "Consultation_Landing_GoIT",
+      "productId": "1819773000079258749",
+      "formName": "footer-contact-form",
+      "eventValue": "Consultation"
+    }
+  },
+  {
+    "key": "ai-marketing-specialist-ru",
+    "name": "AI Automator (RU)",
+    "url": "https://goit.global/ua-ru/courses/ai-marketing-specialist/",
+    "locale": "ua-ru",
+    "expected": {
+      "h1": "AI Automator",
+      "discountSectionSelector": "section.discount.section",
+      "anchors": ["#benefits", "#about", "#program", "#format", "#reviews"],
+      "ctaText": "Записаться на курс",
+      "modalTitle": "Записаться на курс",
+      "submitButtonText": "Отправить"
+    },
+    "zoho": {
+      "productName": "AI_Marketing_Automation_Global_From_Landing_Page",
+      "productId": "1819773001945816767",
+      "formName": "page-modal-form",
+      "eventValue": "CourseLead"
+    },
+    "zohoFooter": {
+      "productName": "Consultation_Landing_GoIT",
+      "productId": "1819773000079258749",
+      "formName": "footer-contact-form",
+      "eventValue": "Consultation"
+    }
+  },
+  {
+    "key": "ai-content-maker",
+    "name": "AI Content Maker",
+    "url": "https://goit.global/ua/courses/ai-content-maker/",
+    "locale": "ua",
+    "expected": {
+      "h1": "AI Content Maker",
+      "discountSectionSelector": "section.discount.section",
+      "anchors": ["#benefits", "#about", "#program", "#format", "#reviews"],
+      "submitButtonText": "Відправити"
+    },
+    "zoho": {
+      "productName": "AI_Content_Maker_Global_From_Landing_Page",
+      "productId": "1819773001939221031",
+      "formName": "page-modal-form",
+      "eventValue": "CourseLead"
+    },
+    "zohoFooter": {
+      "productName": "Consultation_Landing_GoIT",
+      "productId": "1819773000079258749",
+      "formName": "footer-contact-form",
+      "eventValue": "Consultation"
+    }
+  },
+  {
+    "key": "ai-content-maker-ru",
+    "name": "AI Content Maker (RU)",
+    "url": "https://goit.global/ua-ru/courses/ai-content-maker/",
+    "locale": "ua-ru",
+    "expected": {
+      "h1": "AI Content Maker",
+      "discountSectionSelector": "section.discount.section",
+      "anchors": ["#benefits", "#about", "#program", "#format", "#reviews"],
+      "ctaText": "Записаться на курс",
+      "modalTitle": "Записаться на курс",
+      "submitButtonText": "Отправить"
+    },
+    "zoho": {
+      "productName": "AI_Content_Maker_Global_From_Landing_Page",
+      "productId": "1819773001939221031",
+      "formName": "page-modal-form",
+      "eventValue": "CourseLead"
+    },
+    "zohoFooter": {
+      "productName": "Consultation_Landing_GoIT",
+      "productId": "1819773000079258749",
+      "formName": "footer-contact-form",
+      "eventValue": "Consultation"
+    }
+  },
+  {
+    "key": "prompt-engineer",
+    "name": "Prompt Engineering",
+    "url": "https://goit.global/ua/courses/prompt-engineer/",
+    "locale": "ua",
+    "expected": {
+      "h1": "Prompt Engineering",
+      "discountSectionSelector": "section.discount.section",
+      "anchors": ["#benefits", "#about", "#program", "#format", "#reviews"],
+      "submitButtonText": "Відправити"
+    },
+    "zoho": {
+      "productName": "Prompt_Engineering_Global_From_Landing_Page",
+      "productId": "1819773001936699021",
+      "formName": "page-modal-form",
+      "eventValue": "CourseLead"
+    },
+    "zohoFooter": {
+      "productName": "Consultation_Landing_GoIT",
+      "productId": "1819773000079258749",
+      "formName": "footer-contact-form",
+      "eventValue": "Consultation"
+    }
+  },
+  {
+    "key": "prompt-engineer-ru",
+    "name": "Prompt Engineering (RU)",
+    "url": "https://goit.global/ua-ru/courses/prompt-engineer/",
+    "locale": "ua-ru",
+    "expected": {
+      "h1": "Prompt Engineering",
+      "discountSectionSelector": "section.discount.section",
+      "anchors": ["#benefits", "#about", "#program", "#format", "#reviews"],
+      "ctaText": "Записаться на курс",
+      "modalTitle": "Записаться на курс",
+      "submitButtonText": "Отправить"
+    },
+    "zoho": {
+      "productName": "Prompt_Engineering_Global_From_Landing_Page",
+      "productId": "1819773001936699021",
+      "formName": "page-modal-form",
+      "eventValue": "CourseLead"
+    },
+    "zohoFooter": {
+      "productName": "Consultation_Landing_GoIT",
+      "productId": "1819773000079258749",
+      "formName": "footer-contact-form",
+      "eventValue": "Consultation"
+    }
+  },
+  {
+    "key": "ai-no-coder",
+    "name": "No-Coder + AI",
+    "url": "https://goit.global/ua/courses/ai-no-coder/",
+    "locale": "ua",
+    "expected": {
+      "h1": "No-Coder + AI",
+      "discountSectionSelector": "section.discount.section",
+      "anchors": ["#benefits", "#about", "#program", "#format", "#reviews"],
+      "submitButtonText": "Відправити"
+    },
+    "zoho": {
+      "productName": "AI_No_Coder_Global_From_Landing_Page",
+      "productId": "1819773001945816753",
+      "formName": "page-modal-form",
+      "eventValue": "CourseLead"
+    },
+    "zohoFooter": {
+      "productName": "Consultation_Landing_GoIT",
+      "productId": "1819773000079258749",
+      "formName": "footer-contact-form",
+      "eventValue": "Consultation"
+    }
+  },
+  {
+    "key": "ai-no-coder-ru",
+    "name": "No-Coder + AI (RU)",
+    "url": "https://goit.global/ua-ru/courses/ai-no-coder/",
+    "locale": "ua-ru",
+    "expected": {
+      "h1": "No-Coder + AI",
+      "discountSectionSelector": "section.discount.section",
+      "anchors": ["#benefits", "#about", "#program", "#format", "#reviews"],
+      "ctaText": "Записаться на курс",
+      "modalTitle": "Записаться на курс",
+      "submitButtonText": "Отправить"
+    },
+    "zoho": {
+      "productName": "AI_No_Coder_Global_From_Landing_Page",
+      "productId": "1819773001945816753",
+      "formName": "page-modal-form",
+      "eventValue": "CourseLead"
+    },
+    "zohoFooter": {
+      "productName": "Consultation_Landing_GoIT",
+      "productId": "1819773000079258749",
+      "formName": "footer-contact-form",
+      "eventValue": "Consultation"
+    }
+  }
+]
+
+
